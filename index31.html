@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 3.1</title>
+</head>
+<body>
+    <h1>Đăng kí thành viên</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Họ tên</td>
+                <td><form action=""><input type="text" name="ho_ten" placeholder="Vui lòng nhập họ tên"></form></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu</td>
+                <td><form action=""><input type="password" name="mat_khau" placeholder="Vui lòng nhập mật khẩu"></form></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <form action="">
+                    <input type="radio" name="sex" id="_1">
+                    <label for="_1">Nam</label>
+                    <input type="radio" name="sex" id="_2">
+                    <label for="_2">Nữ</label>
+                    <input type="radio" name="sex" id="_3">
+                    <label for="_3">Khác</label>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <form action="">
+                    <input type="checkbox" name="hobby" id="_4">
+                    <label for="_4">Xem phim</label><br>
+                    <input type="checkbox" name="hobby" id="_5">
+                    <label for="_5">Nghe nhạc</label><br>
+                    <input type="checkbox" name="hobby" id="_6">
+                    <label for="_6">Chơi game</label> 
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Tuổi</td>
+                <td><form action=""><input type="number" name="tuoi" min="1" max="200"></form></td>
+            </tr>
+            <tr>
+                <td>Từ khóa tìm kiếm</td>
+                <td><form action=""><input type="text" name="tim_kiem" value="tu khoa"></form></td>
+            </tr>
+            <tr>
+                <td>Giới thiệu bản thân</td>
+                <td><form action=""><textarea name="introduce">Xin chào , tôi tên là Cường</textarea></form></td>
+            </tr>
+            <tr>
+                <td>Email có thể liên hệ</td>
+                <td><form action=""><input type="email" name="email"></form></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ web của bạn</td>
+                <td><form action=""><input type="url" name="web"></form></td>
+            </tr>
+            <tr>
+                <td>Số điện thoại</td>
+                <td><form action=""><input type="number" name="sdt"></form></td>
+            </tr>
+            <tr>
+                <td>Các loại chọn<br>Thời gian</td>
+                <td>
+                    <h2>Ngày tháng</h2>
+                    <form action="">
+                    <label for="_7">Chọn ngày:</label>
+                    <input type="date" name="ngay" id="_7"><br>
+                    <label for="_8">Chọn tháng:</label>
+                    <input type="month" name="thang" id="_8"><br>
+                    <label for="_9">Chọn tuần:</label>
+                    <input type="week" name="tuan" id="_9"><br>
+                    </form>
+                    <h2>Giờ</h2>
+                    <form action="">
+                    <label for="_10">Chọn giờ</label>
+                    <input type="time" name="gio" id="_10"><br>
+                    <label for="_11">Chọn cả ngày và giờ</label>
+                    <input type="datetime-local" name="ngaygio" id="_11">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Màu yêu thích</td>
+                <td><form action=""><input type="color" name="mau_sac"></form></td>
+            </tr>
+            <tr>
+                <td>Bạn đang sinh sống ở Tỉnh/TP nào?</td>
+                <td><form action=""><input type="text" name="dia_chi"></form></td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        table {
+            border-collapse: collapse; /* Gộp viền */
+        }
+        th, td {
+            border: 1.5px solid black; /* Solid là đường viền đen cho ô , 2px là độ dày đường viền*/
+            padding: 8px; /* Khoảng cách bên trong ô */
+            text-align: left; /* Căn trái nội dung */
+        }
+    </style>
+</body>
+</html>
